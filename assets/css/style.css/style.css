@@ -32,26 +32,58 @@ html{
 height: 46px;
 background-color: #000;
 }
-#nav li {
-    display: inline-block;
+#nav, .subnav{
+    list-style-type: none;
 }
-#nav li a {
+#nav > li {
+       display: inline-block;
+}
+#nav li {
+ 
+    position: relative;
+}
+#nav > li > a {
     color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: inline-block;
 }
-#nav li:hover a {
+#nav li:hover .subnav {
+    display: block;
+}
+#nav > li:hover > a {
     color: #000;
     background-color: #ccc;
 }
+
+#nav li:hover a {
+    
+}
 #nav .subnav {
     display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+#nav .subnav a {
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
+}
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
 }
 
 #slider {
-
+min-height: 500px;
+background-color: #333;
 }
 
 #content {
