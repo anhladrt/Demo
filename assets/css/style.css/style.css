@@ -1,10 +1,14 @@
+/* https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band*/
+
 /* Reset CSS */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+.text-white{
+    color:  #fff !important;
+}
 html{
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -23,6 +27,9 @@ html{
 4. Kiểu dáng
 
 */ 
+.clear {
+    clear: both;
+}
 
 #wrapper {
 
@@ -130,7 +137,87 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 #content {
 
 }
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+#content .member-list{
+    margin-top: 47px;
+    overflow: hidden;
+}
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+#content .member-name {
+    font-size: 15px;
+
+}
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Tour Section*/
+.tour-section {
+    background-color: black;
+}
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    list-style-type: none;
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 2px solid #ccc;
+}
+.tickets-list .sold-out {
+    background-color: red;
+    color: #fff;
+    margin-left: 16px;
+    padding: 3px 4px;
+}
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    margin-top: -3px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+
+}
+/* Footer section*/
 #footer {
 
 }
