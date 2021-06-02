@@ -215,7 +215,53 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
     border-radius: 50%;
     text-align: center;
     line-height: 24px;
+}
+/* Places*/
+.places-list {
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+.place-item {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-body {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+}
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
 
+}
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+.place-dsc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 16px;
+}
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #757575;
 }
 /* Footer section*/
 #footer {
