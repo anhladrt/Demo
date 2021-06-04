@@ -85,7 +85,7 @@ margin-top: 8px !important;
 #wrapper {
 
 }
-
+/* Begin header*/
 #header {
 height: 46px;
 background-color: #000;
@@ -94,6 +94,7 @@ top: 0;
 left: 0;
 right: 0;
 z-index: 1;
+overflow: hidden;
 }
 #nav {
     display: inline-block;
@@ -145,6 +146,8 @@ z-index: 1;
 #nab .nav-arrow-down {
     font-size: 14px;
 }
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -153,6 +156,13 @@ z-index: 1;
     background-color: red;
    cursor: pointer;
 }
+#header .mobile-menu-btn:hover {
+    background-color:#ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -162,7 +172,8 @@ z-index: 1;
     color: #000;
     background-color: #ccc;
 }
-
+/* End header*/
+/* Begin slider*/
 #slider {
     position: relative;
 margin-top: 46px;
@@ -184,15 +195,22 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 #slider .text-description {
     font-size: 15px;
 }
+/* End slider*/
+
+
+/* Begin content*/
 
 #content {
 
 }
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -228,6 +246,7 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
     margin-top: 15px;
     border-radius: 4px;
 }
+/* End content*/
 
 /* Tour Section*/
 .tour-section {
