@@ -94,7 +94,6 @@ top: 0;
 left: 0;
 right: 0;
 z-index: 1;
-overflow: hidden;
 }
 #nav {
     display: inline-block;
@@ -146,11 +145,19 @@ overflow: hidden;
 #nab .nav-arrow-down {
     font-size: 14px;
 }
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
 
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+
 }
 #header .search-btn:hover{
     background-color: red;
@@ -234,7 +241,7 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
     line-height: 1.4;
 }
 #content .member-list{
-    margin-top: 47px;
+    margin-top: 32px;
     overflow: hidden;
 }
 #content .member-name {
@@ -283,7 +290,7 @@ background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
 /* Places*/
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 .place-item {
     width: 33.33333%;
